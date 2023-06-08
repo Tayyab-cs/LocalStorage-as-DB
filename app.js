@@ -1,15 +1,15 @@
-const express = require("express");
-const app = express();
+const express = require('express')
+const app = express()
 
-const controller = require("./controller/controller.js");
+const controller = require('./controller/controller.js')
 
-app.use(express.json());
+app.use(express.json())
 
-app.post("/create", controller.create);
-app.get("/getAll", controller.getAll);
-app.patch("/update", controller.update);
-app.delete("/delete", controller.del);
+app.post('/create', controller.create)
+app.get('/getAll', controller.getAll)
+app.patch('/update', controller.update)
+app.delete('/delete', controller.del)
 
-app.listen("3001", () => {
-  console.log("Server is running on port 3001");
-});
+app.listen('3001', () => {
+  console.log('Server is running on port 3001')
+})
